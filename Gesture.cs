@@ -8,7 +8,12 @@ namespace RPSLS
 {
     internal class Gesture
     {
-        public string name = "";
+        public string name;
+
+        public Gesture()
+        {
+            this.name = "";
+        }
 
         public static bool DoIWin(int otherGesture)
         {
