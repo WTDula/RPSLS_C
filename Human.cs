@@ -11,7 +11,7 @@ namespace RPSLS
         public static int ChooseGesture()
         {
             Console.WriteLine("Select the number of your gesture for player 2: ");
-            int input = int.Parse(Console.ReadLine());
+            int input = Int32.Parse(Console.ReadLine());
             return input;
         }
     }
