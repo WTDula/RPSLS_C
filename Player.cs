@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    public class Player
+    public abstract class Player
     {
-        public int score = 0;
 
+        public abstract int ChooseGesture();
     }
 }

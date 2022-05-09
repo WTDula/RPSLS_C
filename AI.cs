@@ -8,7 +8,7 @@ namespace RPSLS
 {
     public class AI : Player
     {
-        public static int ChooseGesture()
+        public override int ChooseGesture()
         {
             Random rnd = new();
             int aiChoice = rnd.Next(0, 5);

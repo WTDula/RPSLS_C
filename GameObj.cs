@@ -8,7 +8,12 @@ namespace RPSLS
 {
     internal class GameObj
     {
-        Gesture[] RPSLSArray = new Gesture[5];
+        Gesture[] RPSLSArray;
+
+        public GameObj()
+        {
+            this.RPSLSArray = new Gesture[5];
+        }
 
         public void CreateGameObj()
         {
