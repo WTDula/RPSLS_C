@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    internal class AI
+    public class AI : Player
     {
+        public static int ChooseGesture()
+        {
+            Random rnd = new();
+            int aiChoice = rnd.Next(0, 5);
+            return aiChoice;
+        }
+        
     }
 }

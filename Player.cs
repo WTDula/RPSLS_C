@@ -8,7 +8,7 @@ namespace RPSLS
 {
     public class Player
     {
-        int score = 0;
+        public int score = 0;
 
     }
 }

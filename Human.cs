@@ -10,9 +10,8 @@ namespace RPSLS
     {
         public static int ChooseGesture()
         {
-            int input;
             Console.WriteLine("Select the number of your gesture for player 2: ");
-            input = int.Parse(Console.ReadLine());
+            int input = int.Parse(Console.ReadLine());
             return input;
         }
     }
