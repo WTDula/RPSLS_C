@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    internal class Gesture
+    internal abstract class Gesture
     {
         public string name;
 
@@ -15,9 +15,6 @@ namespace RPSLS
             this.name = "";
         }
 
-        public static bool DoIWin(int otherGesture)
-        {
-            return false;
-        }
+        public abstract bool DoIWin(Gesture otherGesture);
     }
 }

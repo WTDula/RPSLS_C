@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    internal class Rock : Gesture
+    internal class Paper : Gesture
     {
         public IDictionary<string, string> winsAgainst;
-        public Rock()
+        public Paper()
         {
-            this.name = "Rock";
+            this.name = "Paper";
             IDictionary<string, string> wins = new Dictionary<string, string>();
-            wins.Add("Lizard", "Rock crushes Lizard");
-            wins.Add("Scissors", "Rock crushes Scissors");
+            wins.Add("Rock", "Paper covers Rock");
+            wins.Add("Spock", "Paper disproves Spock");
             this.winsAgainst = wins;
         }
+
         public override bool DoIWin(Gesture otherGesture)
         {
-            if (winsAgainst.ContainsKey(otherGesture.name))
+            if(winsAgainst.ContainsKey(otherGesture.name))
             {
                 Console.WriteLine(this.winsAgainst[otherGesture.name]);
                 return true;
@@ -27,7 +28,7 @@ namespace RPSLS
             else
             {
                 return false;
-
+                
             }
         }
     }
